@@ -1,3 +1,4 @@
+<!--
 ---
 permalink: /markdown/
 title: "Markdown"
@@ -296,7 +297,7 @@ This allows you to denote <var>variables</var>.
 **Footnotes**
 
 The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
+-->
 ### python 
 1.全局moran's I 和局部LISA指数
     空间自相关描述的是地理空间中某种属性值在空间上的相似性程度，换句话说，就是 **“地理相近的单位，其属性值是否也相似”**。
