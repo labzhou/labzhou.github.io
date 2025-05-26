@@ -297,3 +297,41 @@ This allows you to denote <var>variables</var>.
 
 The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
 
+### python 
+1.全局moran's I 和局部LISA指数
+    空间自相关描述的是地理空间中某种属性值在空间上的相似性程度，换句话说，就是 **“地理相近的单位，其属性值是否也相似”**。
+    它是空间统计学的基本概念，体现了“第一地理学定律”（Tobler's First Law of Geography）：“Everything is related to everything else, but near things are more related than distant things.”
+    空间自相关分为三种类型：
+    正自相关：相邻区域属性值相似（高-高或低-低聚集）；
+    负自相关：相邻区域属性值相反（高-低交替分布）；
+    无自相关：属性值在空间上随机分布。
+2衡量指标常见的空间自相关指标包括：
+  （1）Moran's I（莫兰指数）最经典的全局空间自相关度量，定义为：解释：I>0：正自相关（聚集现象）I<0：负自相关（离散现象）I≈0：无空间自相关
+  （2）Geary’s C（基里系数）更敏感于局部差异，定义为：C<1：正自相关；C>1：负自相关；C=1：无自相关。
+  （3）局部莫兰指数（Local Moran's I 或 LISA）用于揭示某个具体空间单元是否处于聚集区域。例如可以识别：
+      高-高聚集（Hot Spots）
+      低-低聚集（Cold Spots）
+      高-低孤岛（Spatial Outliers）
+  ```python
+def calculate_morans_i(valid_data, w_valid):
+    """计算全局和局部Moran's I"""
+    print("Calculating Global Moran's I...")
+    valid_data = np.array(valid_data, dtype=np.float64)
+    global_moran = Moran(valid_data, w=w_valid, transformation='r', permutations=999)
+        print("Calculating Local Moran's I...")
+    local_moran = Moran_Local(valid_data, w=w_valid, transformation='r', permutations=999)
+        return global_moran, local_moran
+ def create_maps(local_moran, valid_mask, flat_data, nrows, ncols):
+    """创建Moran's I和LISA聚类图"""
+    # 创建局部Moran's I图
+    local_I_map = np.full(flat_data.shape, np.nan, dtype=np.float64)
+    local_I_map[valid_mask] = local_moran.Is
+    local_I_map = local_I_map.reshape((nrows, ncols))
+        # 创建LISA聚类图    sig = local_moran.p_sim < 0.05
+    quadrant = np.zeros_like(local_moran.q, dtype=int)
+    quadrant[sig] = local_moran.q[sig]
+        quad_map = np.full(flat_data.shape, np.nan, dtype=np.float64)
+    quad_map[valid_mask] = quadrant
+    quad_map = quad_map.reshape((nrows, ncols))
+        return local_I_map, quad_map
+```
