@@ -298,20 +298,20 @@ This allows you to denote <var>variables</var>.
 The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
 -->
 ### python 
-1.全局moran's I 和局部LISA指数
-    空间自相关描述的是地理空间中某种属性值在空间上的相似性程度，换句话说，就是 **“地理相近的单位，其属性值是否也相似”**。
-    它是空间统计学的基本概念，体现了“第一地理学定律”（Tobler's First Law of Geography）：“Everything is related to everything else, but near things are more related than distant things.”
-    空间自相关分为三种类型：
-    正自相关：相邻区域属性值相似（高-高或低-低聚集）；
-    负自相关：相邻区域属性值相反（高-低交替分布）；
-    无自相关：属性值在空间上随机分布。
-2衡量指标常见的空间自相关指标包括：
-  （1）Moran's I（莫兰指数）最经典的全局空间自相关度量，定义为：解释：I>0：正自相关（聚集现象）I<0：负自相关（离散现象）I≈0：无空间自相关
-  （2）Geary’s C（基里系数）更敏感于局部差异，定义为：C<1：正自相关；C>1：负自相关；C=1：无自相关。
-  （3）局部莫兰指数（Local Moran's I 或 LISA）用于揭示某个具体空间单元是否处于聚集区域。例如可以识别：
-      高-高聚集（Hot Spots）
-      低-低聚集（Cold Spots）
-      高-低孤岛（Spatial Outliers）
+#### 1.全局moran's I 和局部LISA指数<br>
+  空间自相关描述的是地理空间中某种属性值在空间上的相似性程度，换句话说，就是 **“地理相近的单位，其属性值是否也相似”**。  
+  它是空间统计学的基本概念，体现了“第一地理学定律”（Tobler's First Law of Geography）：“Everything is related to everything else, but near things are more related than distant things.”   
+* 空间自相关分为三种类型：  
+    正自相关：相邻区域属性值相似（高-高或低-低聚集）；  
+    负自相关：相邻区域属性值相反（高-低交替分布）；   
+    无自相关：属性值在空间上随机分布。   
+#### 2衡量指标常见的空间自相关指标包括：    
+  （1）Moran's I（莫兰指数）最经典的全局空间自相关度量，定义为：解释：I>0：正自相关（聚集现象）I<0：负自相关（离散现象）I≈0：无空间自相关   
+  （2）Geary’s C（基里系数）更敏感于局部差异，定义为：C<1：正自相关；C>1：负自相关；C=1：无自相关。    
+ *（3）局部莫兰指数（Local Moran's I 或 LISA）用于揭示某个具体空间单元是否处于聚集区域。例如可以识别：   
+    高-高聚集（Hot Spots）   
+    低-低聚集（Cold Spots）   
+    高-低孤岛（Spatial Outliers）   
   ```python
 def calculate_morans_i(valid_data, w_valid):
     """计算全局和局部Moran's I"""
@@ -335,3 +335,28 @@ def calculate_morans_i(valid_data, w_valid):
     quad_map = quad_map.reshape((nrows, ncols))
         return local_I_map, quad_map
 ```
+```
+节点 
+
+家蜂  病毒携带者
+传媒  野蜂 食呀 感染与病毒 
+        植物类型 
+更大尺度  空间类型  以上的各类型比例
+传媒之间的关系   传媒受到花的影响  
+传媒与花是节点  访问频率为节点不可能有负值    
+1.网络指标 重叠  专一 中心   传媒的重叠  传媒的单一 传媒的中心  花的类型（花体积 面积 类型）
+5.花卉多样性 蜜蜂病毒大小  传媒物种多样性和丰度 景观类型？
+  
+ 
+功能性为目标（含水量，水分，物种多样性，NDVI，生产力）相关性为因变量 还是降温？效益值？
+多目标？水分利用效率 
+1.单系统的景观结构
+2.单系统的景观网络
+3.多系统的网络结构
+4.多系统多尺度的网络结构
+
+生境类型为节点  阻力为边   
+生境重叠 生境 单一 生境中心？   生境形态    随机性 聚集性 星状 环状 
+
+不同尺度上的多样性
+``` 
