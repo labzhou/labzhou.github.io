@@ -10,8 +10,9 @@
 
 ### （3）使用ALE（累积局部效应）分析了不同农村土地覆盖类型对城市热岛效应（UHI）的影响  
 采用 SHapley 加法解释 （SHAP） 对农村土地覆盖的<*关键景观参数进行排名>，包括景观级参数 （LLP） 和景观类参数 （LCP）。最后，使用累积局部效应 （ALE） 图来揭示各个关键景观参数对UHI强度( UHII)的影响。内部已经研究的很多了，需要与外部一同考虑了。
-`  import pandas as pd
-    import numpy as np  
+```python
+import pandas as pd
+import numpy as np  
   import matplotlib.pyplot as pltplt.rcParams['font.family'] = 'Times New Roman'    
   plt.rcParams['axes.unicode_minus'] = Falseimport warnings# 忽略所有警告warnings.filterwarnings("ignore")    
   path = r"I.xlsx"    
@@ -25,39 +26,59 @@
   rf_model.fit(X_train, y_train)    
   from alepython import ale_plot# 对单个特征绘制ALE图  
   ale_plot(rf_model, X_test, "infP", bins=50)  # 对特征 infP 进行解释   
-  plt.show()  `
+  plt.show()
+```
   ![image](https://github.com/user-attachments/assets/527c0d0b-66ec-4120-a29d-930b0f506b9a)
 
-  `import matplotlib as mpl
-# 设置 matplotlib 图的默认大小为 9x6 英寸mpl.rc("figure", figsize=(9, 6))
-# 调用 ale_plot 函数绘制 Accumulated Local Effects (ALE) 图ale_plot(    rf_model,                  # 传入机器学习模型（例如训练好的回归或分类模型）    X_test,                      # 数据特征集，用于生成 ALE 图    X_test.columns[:1],          # 选择要绘制 ALE 的特征列，这里选择第一个特征列    bins=20,                # 将特征值分成 20 个区间（箱数）    monte_carlo=True,       # 启用蒙特卡罗模拟，用于增加鲁棒性    monte_carlo_rep=100,    # 设置蒙特卡罗模拟的重复次数为 100    monte_carlo_ratio=0.6,  # 设置蒙特卡罗采样比例为 60%)`![image](https://github.com/user-attachments/assets/c94ac1eb-4ef7-40b0-9889-eaaf2c4666eb)
+```python
+import matplotlib as mpl
+# 设置 matplotlib 图的默认大小为 9x6 英寸
+mpl.rc("figure", figsize=(9, 6))
+# 调用 ale_plot 函数绘制 Accumulated Local Effects (ALE) 图
+ale_plot(    rf_model,                  # 传入机器学习模型（例如训练好的回归或分类模型）
+X_test,                      # 数据特征集，用于生成 ALE 图
+X_test.columns[:1],          # 选择要绘制 ALE 的特征列，这里选择第一个特征列
+bins=20,                # 将特征值分成 20 个区间（箱数）
+monte_carlo=True,       # 启用蒙特卡罗模拟，用于增加鲁棒性
+monte_carlo_rep=100,    # 设置蒙特卡罗模拟的重复次数为 100
+monte_carlo_ratio=0.6,  # 设置蒙特卡罗采样比例为 60%)
+```
+![image](https://github.com/user-attachments/assets/c94ac1eb-4ef7-40b0-9889-eaaf2c4666eb)
 
  单个特征的 ALE 绘图  
-` ale_plot(model=rf_model, train_set=X_test, features=["infC"], monte_carlo=True, save_path='infC.pdf')`
+```
+ale_plot(model=rf_model, train_set=X_test, features=["infC"], monte_carlo=True, save_path='infC.pdf')
+```
  ![image](https://github.com/user-attachments/assets/d1255eaf-8308-417a-80f6-fc6c26a966f9)
-`ale_plot(model=rf_model, train_set=X_test, features=["infP"], monte_carlo=True, save_path='infP.pdf')`
+```
+ale_plot(model=rf_model, train_set=X_test, features=["infP"], monte_carlo=True, save_path='infP.pdf')
+```
  ![image](https://github.com/user-attachments/assets/b7d9409c-abfc-41bd-b4e5-023c705c29fb)
 
 这里展示的是不同取值下的加法局部效应（ALE）值及其相应的置信区间具体的值
-`ale_eff = ale(X=X_test, model=rf_model, 
-              feature=["sqft_lot", "sqft_living"], grid_size=100)`
+```ale_eff = ale(X=X_test, model=rf_model, 
+              feature=["sqft_lot", "sqft_living"], grid_size=100)```
 ![image](https://github.com/user-attachments/assets/2fb51f2b-ed8b-47fb-8027-c230bfb623b9)
 
 #### 计算ALE（加法局部效应）值
-`ale_eff = ale(
+```
+ale_eff = ale(
     X=X_test,            # 输入数据集 用于计算ALE的特征数据
     model=rf_model,              # 模型 model: 用于计算ALE的已训练模型，通常是一个回归或分类模型
     feature=["grade"]      # 特征 feature: 计算ALE的特征，这里是“grade”，表示需要分析的特征
-)`
+)
+```
 ![4a7473a7fd3cbc9c49d957707e6812c3](https://github.com/user-attachments/assets/2ce34bdf-7952-4a16-9e41-2a731363e695)
 在训练模型时，我们将特征矩阵转换为 numpy 数组。这是为了避免在创建 ALE 时出现警告消息。
-`model = RFR()  
+```python
+model = RFR()  
 model.fit(X.to_numpy(), y)  
 ale = ALE(model.predict , feature_names=X.columns, target_names=['Rings'])  
 exp = ale.explain(X.to_numpy())   
 ale = ALE(model.predict , feature_names=X.columns, target_names=['Rings'])
 exp = ale.explain(X.to_numpy())
-plot_ale(exp, features=[0,1,2], fig_kw={'figwidth':15, 'figheight': 5})`
+plot_ale(exp, features=[0,1,2], fig_kw={'figwidth':15, 'figheight': 5})
+```
 ![image](https://github.com/user-attachments/assets/128142bf-0627-40e9-b44d-bdc0e68054fe)
 
 ### （4）过度为了连通性反而没多大用，增加斑块面积和质量 保障繁殖和生存可能更加有效 
