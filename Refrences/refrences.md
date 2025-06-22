@@ -8,14 +8,15 @@
 活力中的密度和稳定区域   韧性中的关系 
 ![image](https://github.com/user-attachments/assets/6f045c1c-41d8-4a83-90d6-6357c4d67e76)
 
-### 使用ALE（累积局部效应）分析了不同农村土地覆盖类型对城市热岛效应（UHI）的影响  
-`  import pandas as pd  
-  import numpy as np  
-  import matplotlib.pyplot as pltplt.rcParams['font.family'] = 'Times New Roman'  
-  plt.rcParams['axes.unicode_minus'] = Falseimport warnings# 忽略所有警告warnings.filterwarnings("ignore")  
-  path = r"I.xlsx"  
-  df = pd.read_excel(path)  
-  from sklearn.model_selection import train_test_split# 划分特征和目标变量  
+### （3）使用ALE（累积局部效应）分析了不同农村土地覆盖类型对城市热岛效应（UHI）的影响  
+采用 SHapley 加法解释 （SHAP） 对农村土地覆盖的<*关键景观参数进行排名>，包括景观级参数 （LLP） 和景观类参数 （LCP）。最后，使用累积局部效应 （ALE） 图来揭示各个关键景观参数对UHI强度( UHII)的影响。内部已经研究的很多了，需要与外部一同考虑了。
+`  import pandas as pd
+    import numpy as np  
+  import matplotlib.pyplot as pltplt.rcParams['font.family'] = 'Times New Roman'    
+  plt.rcParams['axes.unicode_minus'] = Falseimport warnings# 忽略所有警告warnings.filterwarnings("ignore")    
+  path = r"I.xlsx"    
+  df = pd.read_excel(path)    
+  from sklearn.model_selection import train_test_split# 划分特征和目标变量    
    X = df.drop(['y'], axis=1)   
    y = df['y']  # 划分训练集和测试集  
    X_train, X_test, y_train, y_test = train_test_split(    X,      y,     test_size=0.3,  random_state=42)   
@@ -49,3 +50,38 @@
     feature=["grade"]      # 特征 feature: 计算ALE的特征，这里是“grade”，表示需要分析的特征
 )`
 ![4a7473a7fd3cbc9c49d957707e6812c3](https://github.com/user-attachments/assets/2ce34bdf-7952-4a16-9e41-2a731363e695)
+在训练模型时，我们将特征矩阵转换为 numpy 数组。这是为了避免在创建 ALE 时出现警告消息。
+`model = RFR()  
+model.fit(X.to_numpy(), y)  
+ale = ALE(model.predict , feature_names=X.columns, target_names=['Rings'])  
+exp = ale.explain(X.to_numpy())   
+ale = ALE(model.predict , feature_names=X.columns, target_names=['Rings'])
+exp = ale.explain(X.to_numpy())
+plot_ale(exp, features=[0,1,2], fig_kw={'figwidth':15, 'figheight': 5})`
+![image](https://github.com/user-attachments/assets/128142bf-0627-40e9-b44d-bdc0e68054fe)
+
+### （4）过度为了连通性反而没多大用，增加斑块面积和质量 保障繁殖和生存可能更加有效 
+https://link.springer.com/article/10.1007/s13280-025-02149-1?utm_medium=external_display&utm_source=stork&utm_content=email&utm_term=null&utm_campaign=CONR_JRNLS_AWA1_CN_CNPL_0034V_STKRE#citeas
+Green infrastructure has weak conceptual links with efficient biodiversity conservation  
+###  （5）特有性分布格局的解释高度依赖于观察尺度体系的选择
+尺度选择中所需要考虑的区域大小(粒度)、总面积(空间范围)以及物种分类标准(分类处理)都会影响到最终呈现的结果。例如，在局地尺度某个地区可能被视为特有性热点地区，但在全球视角下可能不显著。因此，保护策略制定需建立多尺度分析框架：粗粒度用于大区域保护规划，中粒度统筹跨境物种保护，细粒度则支撑特有种栖息地的精准保护。未来研究需进一步整合多类群、多维度指标，发展尺度稳健的生物多样性评估体系。
+
+原文链接：Daru, B. H., Farooq, H., Antonelli, A., & Faurby, S. (2020). Endemism patterns are scale dependent. Nature Communications, 11(1), 2115. https://doi.org/10.1038/s41467-020-15921-6
+### （6） Nature论文解读：南极臭氧恢复的指纹识别研究 Fingerprinting the Recovery of Antarctic Ozone
+首次应用气候变化研究中的指纹识别方法评估南极臭氧恢复  
+量化了ODS减少对臭氧恢复的贡献，与温室气体影响进行区分  
+揭示了ODS强迫如何影响臭氧的内部变异性，进而影响恢复信号的检测   
+   区分自然变化与人类恢复 全球绿化 
+
+### (7) Framework for risk assessment of economic loss from structures damaged by rainfall-induced landslides using machine learning
+极端降雨事件的频率增加，强降雨诱发滑坡的灾前防范措施对提高灾害韧性至关重要。本研究提出了一种基于机器学习的降雨诱发滑坡损害建筑结构的经济风险评估方法。采用随机森林和LightGBM算法构建基于机器学习的滑坡预测模型，并综合考虑滑坡状态因子及其触发因子的空间分布。在研究中，通过降雨指数考虑降雨的时间变化，并将其与降雨强度一起作为特征变量。利用广义极值分布统计估计降雨指数与其年超越概率的关系，从而构建降雨灾害曲线。随后，利用基于机器学习的滑坡预测模型和降雨灾害曲线评估降雨诱发滑坡的易发性。最后，基于滑坡易发性评估结果和建筑物分布图，估算了降雨诱发滑坡对建筑物造成的经济损失风险曲线。研究结果表明，在评估降雨诱发滑坡易发性方面，LightGBM的预测性能优于随机森林。所采用的案例分析展示了该方法可用于制定基于风险的灾害减缓策略。
+
+### (8) Global Change Biology | 干旱引起温度对生态系统碳吸收控制作用的减弱(20225)
+ 随着北方地区的气候变暖，生态系统的碳吸收量逐渐增加。然而，温暖气候条件下温度对碳吸收的正向效应是否会持续，仍然存在不确定性。  
+ 特别是，水分胁迫如何影响温度对生态系统碳吸收的控制作用，也未被充分研究。  
+ 
+本文使用标准化的多重回归方法，基于遥感卫星和地面观测数据，系统地探讨了1983年至2018年间温度对北方生态系统初级生产力（GPP）的控制作用变化（SGPP-TAS）。研究表明，自2000年以来，SGPP-TAS在空间和时间上发生了显著的转变，温度对碳吸收的控制作用从正向转变为负向。土壤水分的变化被认为是主要的驱动因素，特别是在草地和针叶林地区，水分的变化加速了这一转变。这一发现对未来全球变暖和干旱加剧条件下北方生态系统碳吸收潜力的预测具有重要意义。
+Wu, H., Fu, C., Yu, K., et al. Drought-Induced Weakening of Temperature Control on Ecosystem Carbon Uptake Across Northern Lands. Global Change Biology, 31:e70032 (2025). https://doi.org/10.1111/gcb.70032.
+
+### (9) 
+ 
