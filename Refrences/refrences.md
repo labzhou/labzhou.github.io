@@ -238,3 +238,39 @@ https://doi.org/10.1080/17538947.2024.2310093
  滨海城市扩张？
 ### 全球河流系统将旧碳从陆地输送到大气中 Old carbon routed from land to the atmosphere by global river systems 
 10.1038/s41586-025-09023-w 摘要： Rivers and streams are an important pathway in the global carbon cycle, releasing carbon dioxide (CO2) and methane (CH4) from their water surfaces to the atmosphere1,2. Until now, CO2 and CH4 emitted from rivers were thought to be predominantly derived from recent (sub-decadal) biomass production and, thus, part of ecosystem respiration3,4,5,6. Here we combine new and published measurements to create a global database of the radiocarbon content of river dissolved inorganic carbon (DIC), CO2 and CH4. Isotopic mass balance of our database suggests that 59 ± 17% of global river CO2 emissions are derived from old carbon (millennial or older), the release of which is linked to river catchment lithology and biome. This previously unrecognized release of old, pre-industrial-aged carbon to the atmosphere from long-term soil, sediment and geologic carbon stores through lateral hydrological routing equates to 1.2 ± 0.3 Pg C year−1, similar in magnitude to terrestrial net ecosystem exchange. A consequence of this flux is a greater than expected net loss of carbon from aged organic matter stores on land. This requires a reassessment of the fate of anthropogenic carbon in terrestrial systems and in global carbon cycle budgets and models. 摘要翻译： 河流是全球碳循环的重要通道，其水面会向大气释放二氧化碳（CO2）和甲烷（CH4）1,2。此前学界认为，河流排放的CO2和CH4主要源自近十年内的生物量生产活动，因此属于生态系统呼吸作用的一部分3,4,5,6。本研究通过整合新测量数据与既有成果，建立了全球河流溶解性无机碳（DIC）、CO2和CH4的放射性碳含量数据库。同位素质量平衡分析显示，全球河流CO2排放量的59±17%源自千年或更古老碳库的释放，这一过程与流域岩性和生物群落特征密切相关。这种通过侧向水文路径从长期土壤、沉积物和地质碳库中释放的工业革命前古老碳，年均通量达1.2±0.3 Pg C，与陆地净生态系统交换量级相当。该通量导致陆地古老有机碳库的净损失超出预期，亟需重新评估陆地系统中人为碳的归宿，并对全球碳循环预算和模型进行修正。
+
+### （28)Satellites reveal hot spots of ocean changes in the early 21st century   https://www.science.org/doi/10.1126/sciadv.ads0307
+  * **1.问题背景**：这篇文章主要研究了全球海洋色彩变化，尤其是在气候变化的背景下，海洋颜色的变化能够反映海洋生态系统的变化。文章聚焦于水色变化对海洋生态系统（例如浮游植物生物量）及其变化的影响。海洋颜色的变化是由温度、气候事件（如ENSO，印度洋偶极子等）及其他海洋过程（如海水层化、营养物质运输等）驱动的。  
+   **意义**：随着气候变化，海洋生态环境也在发生变化，尤其是低纬度海洋区域。文章旨在揭示这些变化背后的原因，并通过卫星遥感数据对水色变化进行长期分析，揭示气候变化如何影响海洋生态系统的动态  
+  *  **2.科学问题**    
+  海洋颜色变化的主要驱动因素是什么？海洋颜色的变化如何与气候变化（如海表温度变化）相关联？在过去25年中，全球海洋颜色的变化反映了哪些生态学和气候变化趋势？
+   **研究目标**：通过分析过去25年的卫星数据，探索全球海洋水色变化的时空模式，以及这些变化与气候变化（特别是海表温度和气候事件）的关系。  
+  *  **3.科学假设**  
+   **假设1**：海洋颜色变化与海表温度（SST）变化密切相关，尤其在低纬度地区，海洋水色变得更浅或偏绿。  
+   **假设2**：气候事件（如ENSO和印度洋偶极子）对海洋水色变化有显著影响，尤其是在热带和亚热带地区。  
+   **假设3**：水色的变化与浮游植物群落结构密切相关，水色变浅可能与浮游植物生物量的下降有关。  
+  *  **4.研究内容**  
+ **数据来源**：研究使用了1998年至2022年的全球海洋颜色遥感数据，包括ESA Ocean Color Climate Change Initiative (OC-CCI)数据集，这些数据能够提供全球范围内的海洋水色变化信息。  
+  **方法**：文章采用了时间序列分析、相关性分析和因果关系分析方法，探讨水色变化与海表温度变化之间的关系。  
+  * **水色变化监测**：使用卫星遥感数据分析全球海洋的水色变化，特别是海洋水色的“色调角度”（α\*）。  
+  * **气候变化分析**：通过与气候事件（如ENSO）和海表温度（SST）的相关性分析，研究这些因素如何驱动水色的变化。  
+  * **浮游植物动态分析**：进一步探索水色变化与浮游植物群落的关系，分析不同水色区域的浮游植物组成差异。  
+
+*  **5. 如何做**  
+  **数据分析**：使用长期的卫星遥感数据，结合海表温度（SST）数据，进行相关性和因果分析。  
+  **分析方法**：  
+  * **相关性分析**：分析水色变化和海表温度变化之间的相关性，寻找趋势和异常。  
+  * **因果分析**：使用归一化信息流（NIF）分析，研究海表温度对水色变化的长期影响。  
+  * **浮游植物群落**：将水色变化与浮游植物生物量（如叶绿素a）结合分析，探讨水色与浮游植物群落结构的关系。  
+
+*  **6.研究的不足**  
+ **数据的时间跨度有限**：文章只分析了过去25年的数据，可能无法揭示更长期的海洋颜色变化趋势。  
+ **局部区域的代表性不足**：研究主要基于全球范围的卫星数据，某些局部区域的细节可能没有充分体现。  
+ **水色变化的驱动因素复杂**：虽然文章探讨了海表温度和气候事件的影响，但海洋水色变化是多因素共同作用的结果，可能还有其他未被深入讨论的因素，如营养物质浓度、浮游植物的物种组成等。  
+
+*  **7.研究的足够之处**
+ **方法创新**：文章通过结合卫星遥感数据和气候事件（如ENSO、印度洋偶极子等）分析水色变化，提供了全球海洋水色变化的新视角。  
+ **综合性强**：研究涵盖了全球范围的水色变化分析，并与气候变化及生态变化（如浮游植物群落结构）建立了紧密的联系。  
+ **数据可靠性高**：文章使用了长期的卫星遥感数据，并结合了实地浮游植物数据，增强了研究的科学性和数据的准确性。  
+
+
