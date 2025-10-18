@@ -237,9 +237,13 @@ https://doi.org/10.1080/17538947.2024.2310093
  山坡型城镇化是目前解决城镇扩张最经济的途径，但对山区建设用地梯度扩张的特征、过程、规律及其对景观破碎化影响的研究较少。本研究提出了一种识别山区建设用地的方法，并量化其对耕地和生态用地破碎化的空间影响。研究结果表明：（1）山坡型城镇化可分为“单向”、“双向”和“多向”扩张，受城镇不同方向地形比例的影响，扩张幅度与城市经济水平相关。（2）山坡型城镇化导致景观破碎化呈加剧趋势，20 年来重点区域耕地破碎化增加了近3倍，生态用地破碎化增加了2倍。（3）山坡型城镇化对耕地和生态用地破碎化的影响随距离增大而减小，主要影响3 km 以内的区域。研究结果为识别山地城镇发展景观生态风险的重点区域及特征提供方法参考，为降低山地城镇发展过程中景观生态风险、促进可持续发展提供理论依据。
  滨海城市扩张？
 ### 全球河流系统将旧碳从陆地输送到大气中 Old carbon routed from land to the atmosphere by global river systems 
-10.1038/s41586-025-09023-w 摘要： Rivers and streams are an important pathway in the global carbon cycle, releasing carbon dioxide (CO2) and methane (CH4) from their water surfaces to the atmosphere1,2. Until now, CO2 and CH4 emitted from rivers were thought to be predominantly derived from recent (sub-decadal) biomass production and, thus, part of ecosystem respiration3,4,5,6. Here we combine new and published measurements to create a global database of the radiocarbon content of river dissolved inorganic carbon (DIC), CO2 and CH4. Isotopic mass balance of our database suggests that 59 ± 17% of global river CO2 emissions are derived from old carbon (millennial or older), the release of which is linked to river catchment lithology and biome. This previously unrecognized release of old, pre-industrial-aged carbon to the atmosphere from long-term soil, sediment and geologic carbon stores through lateral hydrological routing equates to 1.2 ± 0.3 Pg C year−1, similar in magnitude to terrestrial net ecosystem exchange. A consequence of this flux is a greater than expected net loss of carbon from aged organic matter stores on land. This requires a reassessment of the fate of anthropogenic carbon in terrestrial systems and in global carbon cycle budgets and models. 摘要翻译： 河流是全球碳循环的重要通道，其水面会向大气释放二氧化碳（CO2）和甲烷（CH4）1,2。此前学界认为，河流排放的CO2和CH4主要源自近十年内的生物量生产活动，因此属于生态系统呼吸作用的一部分3,4,5,6。本研究通过整合新测量数据与既有成果，建立了全球河流溶解性无机碳（DIC）、CO2和CH4的放射性碳含量数据库。同位素质量平衡分析显示，全球河流CO2排放量的59±17%源自千年或更古老碳库的释放，这一过程与流域岩性和生物群落特征密切相关。这种通过侧向水文路径从长期土壤、沉积物和地质碳库中释放的工业革命前古老碳，年均通量达1.2±0.3 Pg C，与陆地净生态系统交换量级相当。该通量导致陆地古老有机碳库的净损失超出预期，亟需重新评估陆地系统中人为碳的归宿，并对全球碳循环预算和模型进行修正。
+10.1038/s41586-025-09023-w
+        
+        
+        
+         摘要： Rivers and streams are an important pathway in the global carbon cycle, releasing carbon dioxide (CO2) and methane (CH4) from their water surfaces to the atmosphere1,2. Until now, CO2 and CH4 emitted from rivers were thought to be predominantly derived from recent (sub-decadal) biomass production and, thus, part of ecosystem respiration3,4,5,6. Here we combine new and published measurements to create a global database of the radiocarbon content of river dissolved inorganic carbon (DIC), CO2 and CH4. Isotopic mass balance of our database suggests that 59 ± 17% of global river CO2 emissions are derived from old carbon (millennial or older), the release of which is linked to river catchment lithology and biome. This previously unrecognized release of old, pre-industrial-aged carbon to the atmosphere from long-term soil, sediment and geologic carbon stores through lateral hydrological routing equates to 1.2 ± 0.3 Pg C year−1, similar in magnitude to terrestrial net ecosystem exchange. A consequence of this flux is a greater than expected net loss of carbon from aged organic matter stores on land. This requires a reassessment of the fate of anthropogenic carbon in terrestrial systems and in global carbon cycle budgets and models. 摘要翻译： 河流是全球碳循环的重要通道，其水面会向大气释放二氧化碳（CO2）和甲烷（CH4）1,2。此前学界认为，河流排放的CO2和CH4主要源自近十年内的生物量生产活动，因此属于生态系统呼吸作用的一部分3,4,5,6。本研究通过整合新测量数据与既有成果，建立了全球河流溶解性无机碳（DIC）、CO2和CH4的放射性碳含量数据库。同位素质量平衡分析显示，全球河流CO2排放量的59±17%源自千年或更古老碳库的释放，这一过程与流域岩性和生物群落特征密切相关。这种通过侧向水文路径从长期土壤、沉积物和地质碳库中释放的工业革命前古老碳，年均通量达1.2±0.3 Pg C，与陆地净生态系统交换量级相当。该通量导致陆地古老有机碳库的净损失超出预期，亟需重新评估陆地系统中人为碳的归宿，并对全球碳循环预算和模型进行修正。
 
-### （28)Satellites reveal hot spots of ocean changes in the early 21st century   https://www.science.org/doi/10.1126/sciadv.ads0307
+### （28)Satellites reveal hot spots of ocean changes in the early 21st century   https://www.science.org/doi/10.1126/sciadv.ads0307     
   * **1.问题背景**：这篇文章主要研究了全球海洋色彩变化，尤其是在气候变化的背景下，海洋颜色的变化能够反映海洋生态系统的变化。文章聚焦于水色变化对海洋生态系统（例如浮游植物生物量）及其变化的影响。海洋颜色的变化是由温度、气候事件（如ENSO，印度洋偶极子等）及其他海洋过程（如海水层化、营养物质运输等）驱动的。  
    **意义**：随着气候变化，海洋生态环境也在发生变化，尤其是低纬度海洋区域。文章旨在揭示这些变化背后的原因，并通过卫星遥感数据对水色变化进行长期分析，揭示气候变化如何影响海洋生态系统的动态  
   *  **2.科学问题**    
@@ -271,6 +275,45 @@ https://doi.org/10.1080/17538947.2024.2310093
 *  **7.研究的足够之处**
  **方法创新**：文章通过结合卫星遥感数据和气候事件（如ENSO、印度洋偶极子等）分析水色变化，提供了全球海洋水色变化的新视角。  
  **综合性强**：研究涵盖了全球范围的水色变化分析，并与气候变化及生态变化（如浮游植物群落结构）建立了紧密的联系。  
- **数据可靠性高**：文章使用了长期的卫星遥感数据，并结合了实地浮游植物数据，增强了研究的科学性和数据的准确性。  
+ **数据可靠性高**：文章使用了长期的卫星遥感数据，并结合了实地浮游植物数据，增强了研究的科学性和数据的准确性。
 
+    
+### （29）全球植树造林导致区域水资源供应发生变化 【Nature Geoscience 2022】
+恢复植树是储存大气碳和减缓气候变化的有效方法。然而，人们早已知道，大规模扩大树木覆盖面积会增加蒸发量，导致当地供水量和溪流流量减少。最近的研究表明，通过加强大气水分循环来增加降水量，可以抵消这种影响。在这里，我们利用数据驱动的Budyko模型和 UTrack 水分循环数据集，计算了全球 9 亿公顷的树木恢复对蒸发和降水的影响。我们的研究表明，直接提高蒸发量和间接提高降水量的综合效应会产生复杂的水供应变化模式。在某些地区，大规模扩大树木覆盖面积可使水供应量增加多达 6%，而在另一些地区则会减少多达 38%。这对大河流域的影响也不尽相同：有些河流会因蒸发量增加而损失 6% 的水量，而对其他河流来说，更多的水分循环则抵消了更大的蒸发量。一些所谓的森林恢复热点地区可能会失去水源，其中包括目前已经面临缺水的地区。植树造林极大地改变了陆地水通量，我们强调未来的植树造林战略应考虑这些水文效应。
+利用数据研究树木恢复对降水和蒸发的影响，树木恢复是否会使源变成会汇？谁来得更强烈，那种中介效应更为强烈？
 
+global tree-restoration potential (https://doi.org/10.1126/science.aax0848, available on request)
+WorldClim dataset of potential evaporation (https://doi.org/10.6084/m9.figshare.7504448.v3)
+Utrack dataset for moisture recycling (https://doi.org/10.1594/PANGAEA.912710)
+MSWEP dataset for precipitation (http://www.gloh2o.org/mswep/, available on request)
+GRDC dataset for streamflow (https://www.bafg.de/GRDC)  
+HydroSHEDS database for the river basin outlines (https://www.hydrosheds.org/products/hydrobasins)
+The calculated evaporation and streamflow before restoration and changes in evaporation, streamflow and precipitation can be downloaded from https://figshare.com/s/7e2e8d6064e745697f3e (Name: ET_Q_P_change_tree_restoration)
+
+### （30） 量化和解释城市居民“拥有多少绿地”（access）与“能否真正到达并使用这些绿地”（accessibility）之间的空间差距（2024）
+Interpreting differences in access and accessibility to urban greenspace through geospatial analysis
+拥有量-可达性来表示   可作为我的供需表示研究方案  空间溢出-可达性  稳定性 敏感性
+<img width="1004" height="613" alt="image" src="https://github.com/user-attachments/assets/0895511e-c52c-4b44-8d83-22dc7ed73645" />
+
+### （31）  通过物种–栖息地网络揭示的景观破碎化对洪泛平原鱼类的影响（Conservation Biology 2024）
+Zhang, C., García-Girón, J., Yang, Z., Liu, Z., Li, S., You, W., Ge, Y., Gao, X., & Yan, Y. (2025). Effects of landscape fragmentation on floodplain fishes as revealed by species-habitat networks. Conservation Biology, e70123.
+
+ 鱼类类型（河流、江湖迁移洄游 湖泊定居）-- 湖泊类型（通江湖泊+水文连通性受阻或管制的阻隔湖泊 ） 
+ <img width="939" height="790" alt="image" src="https://github.com/user-attachments/assets/c529bdb5-5e13-423a-8fa4-2b10786f41ab" />
+ 在过去数十年横向水文连通性丧失导致的长江中下游景观破碎化过程中，不同鱼类类群对环境变化的响应模式。在高度破碎的景观中，湖泊面积和横向水文连通性对维持鱼类丰富度和网络稳健性至关重要，凸显了在洪泛平原中优先保护大型连通湖泊的必要性。同时，我们确认了大型江湖洄游型鱼类在连接景观中不同空间模块、维持景观网络结构方面的重要作用。
+
+### （32） 近三十年来人类活动重塑了河流鱼类群落（Nature Ecology&Evolution 2023）
+Danet, A., Giam, X., Olden, J. D., & Comte, L. (2024). Past and recent anthropogenic pressures drive rapid changes in riverine fish communities.Nature Ecology & Evolution,  1-12.
+采用贝叶斯层次模型评估本地群落的总丰度、物种丰富度和群落组成随时间变化的情况，包括外来物种的比例。
+各站点每十年群落时间趋势的分布.站点数据
+
+理解淡水生态系统中生物群落如何变化对于开展保护工作至关重要。本研究利用古界、新北界和澳新界河流鱼类群落时间序列汇编（其中93%的数据集中在1993年至2019年之间）评估了过去和近期的人为压力如何推动群落在空间和时间上发生变化。研究结果表明，有30%的群落每十年经历快速组成变化，主要表现为优势物种的显著变化。此外，总丰度和物种丰富度分别每十年增加13%和7%。这些变化主要受人为压力的施加强度和发生时间影响，尤其是非本土物种的引入。研究结果表明，非本土物种的引入在一定程度上补偿了人为压力对物种丰富度和总丰度的负面影响，这种模式符合先前研究的全球生物同质化的观点。研究强调为实现全球保护目标，必须考虑生物群落变化的复杂性及其驱动因素。
+
+### （33） 全球变暖背景下热浪持续时间加速增长（Nat. Geosci ）
+Accelerating increase in the duration ofheatwaves under global warming
+随着全球变暖，热浪事件的频率和持续时间均在增加。然而，热浪的持续时间分布不仅由温度阈值决定，还与日际温度的自相关结构密切相关。基于ERA5再分析资料和CMIP6模式，研究发现热浪持续时间的增长速度并非线性，而是随区域变暖而加速。也就是说，当平均气温上升到更高水平后，热浪持续的时间会以更快的速度延长。进一步分析表明，这种加速特征可通过“归一化增温”（即增温量除以当地历史温度变率的标准差 σ）统一描述。无论气候带或地理位置如何，长热浪的增长趋势都能折叠为一条相似的曲线。这说明全球不同地区在物理机制上具有相似性。论文还指出，极端长热浪（如持续十天以上的事件）增幅最大，其概率提升远超平均水平，这意味着未来社会、生态与健康风险可能呈非线性上升。
+
+（1）该研究强调在评估气候极端事件时，不应仅关注强度和频次，而应重视事件的持续时间与累积暴露效应。这一思路可推广至干旱、极端降水、寒潮等研究，有助于更准确地揭示极端事件对生态系统与人类社会的长期影响。（2）为跨区域比较与健康风险研究提供统一度量框架。“归一化增温（ΔT/σ）”提供了不同地区间可比的分析尺度，适合用于研究气候变率、热暴露差异以及气候变化对人体健康和经济系统的区域性影响。（3）提供复合风险评估的新视角。热浪持续性增强的加速特征提示未来可能出现非线性放大风险。这一认识可用于综合研究气候变化对能源需求、农业产量和公共健康的多重影响，为多学科风险评估提供理论支撑。
+   文章信息Martinez-Villalobos C, Fu D, Loikith P C, et al. Accelerating increase in the duration of heatwaves under global warming[J]. Nature Geoscience, 2025: 1-8.
+
+   
